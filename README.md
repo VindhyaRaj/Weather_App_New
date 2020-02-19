@@ -23,6 +23,7 @@ Project Structure
 ========================
 
  WeatherApp/app                  	  : Project files
+ 
      ** src/main
 
          **  java/…/weatherapp       	  : Primary Kotlin classes for the project
