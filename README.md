@@ -22,34 +22,41 @@ Glide for image loading.
 Project Structure
 ========================
 
+ WeatherApp/app                  	  : Project files
+     ** src/main
 
-├── README.md                           : Description of this repository
-│
-└── WeatherApp/app                  	  : Project files
-    ├── src/main
-    │   ├── java/…/weatherapp       	  : Primary Kotlin classes for the project
-    │   │   ├── adapter                 : CitiesListAdapter.kt (adapter for the RecyclerView)
-    │   │   │
-    │   │   ├── data                    : Kotlin classes for database elements
-    │   │   │   ├── AppDatabase.kt      : Database holder
-    │   │   │   ├── CitiesListDAO.kt    : DAO with database queries
-    │   │   │   ├── City.kt             : City entity class
-    │   │   │   └── WeatherResponse.kt    : Data classes for results received from API calls
-    │   │   │
-    │   │   ├── network/WeatherAPI.kt   : Interface for GET queries to the API
-    │   │   │
-    │   │   ├── AddCityDialog.kt        : Dialog fragment for adding cities
-    │   │   ├── DetailsActivity.kt 	 : Activity for viewing weather details for a specific city
-    │   │   └── MainActivity.kt 		 : Primary homepage list activity
-    │   │
-    │   └── AndroidManifest.xml         : manifest file for the application
-    │
-    └── build.gradle
+         **  java/…/weatherapp       	  : Primary Kotlin classes for the project
+
+           ** adapter                 : CitiesListAdapter.kt (adapter for the RecyclerView)
+
+           ** data                    : Kotlin classes for database elements
+
+                ** AppDatabase.kt      : Database holder
+
+                ** CitiesListDAO.kt    : DAO with database queries
+
+                **City.kt             : City entity class
+
+                **WeatherResponse.kt    : Data classes for results received from API calls
+
+            ** network/WeatherAPI.kt   : Interface for GET queries to the API
+
+            ** AddCityDialog.kt        : Dialog fragment for adding cities
+
+            ** DetailsActivity.kt 	 : Activity for viewing weather details for a specific city
+
+            ** MainActivity.kt 		 : Primary homepage list activity
+
+            ** AndroidManifest.xml         : manifest file for the application
+
+         ** build.gradle
 
 
 Improvisations
 ================
 
 Make the app complete by adding search via GPS to fetch the weather information of a particular location
+
 Use of MVVM for much modular design
+
 Use of Dagger 2 to inject the manager service into activity and application depending on the scope
